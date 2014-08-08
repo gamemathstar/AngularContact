@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 8, 2014, 12:58:05 PM
+    Author     : Muhammad
+*/
+
+
+.address-pane li{
+    list-style-type: none;
+    background-color: #d6e9c6;
+
+}
+
+.contact-pane{
+    background: #99E5FF;
+    opacity: .95;
+    z-index: 10;
+    color:#ffffff;
+    text-align: center;
+}
+
+.contact-name{
+    font-size: 18px;
+}
+
+.contact-list{
+    height: 350px;
+    overflow-y: auto;
+}
+
+.nav-bar-mine{
+    background: #99E5FF;
+}

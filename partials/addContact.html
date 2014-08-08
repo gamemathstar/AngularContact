@@ -1,0 +1,27 @@
+<div class="">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 well">
+            
+            <form novalidate ng-submit=""  name="myForm">
+                <fieldset>
+                    <legend>Add new Contact</legend>
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control input-lg" placeholder="Name" ng-model="contact.name" required value="" >
+                    </div>
+                    <div class="input-group input-group-lg">
+                        <input type="email" class="form-control input-lg" placeholder="Email" ng-model="contact.email" required value="">
+                    </div>
+                    <div class="input-group input-group-lg">
+                        <input type="number" class="form-control input-lg" placeholder="Phone No" ng-model="contact.phone_no" value="">
+                    </div>
+                    <br />
+                    <button  ng-show="!(myForm.$error.required) && !(myForm.$error.email)" type="button" class="btn btn-default" ng-click="addContact()">Default</button>
+                </fieldset>
+            </form>
+
+            <span class="label label-info">maudugaladima@gmail.com</span>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
