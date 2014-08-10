@@ -9,21 +9,7 @@
                     <button class="btn btn-default" type="button">Filter</button>
                 </span>
             </div><!-- /input-group -->
-            <label class="formgroup">by:
-                <select ng-model="artistOrder">
-                    <option value="name">Name</option>
-                    <option value="email">Email</option>
-                </select>
-            </label>
-
-            <label class="formgroup">
-                <input type="radio" ng-model="direction" name="direction" checked>
-                ascending
-            </label>
-            <label class="formgroup">
-                <input type="radio" ng-model="direction" name="direction" value="reverse">
-                descending
-            </label>
+            
         </form>
         <div class="contact-list">
             <table class="table table-condensed table-striped table-bordered">
@@ -34,7 +20,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="contact in contacts|  filter: query |  orderBy:contactOrder:direction">
+                    <tr ng-repeat="contact in contacts|  filter: query ">
                         <td width="30"><span >{{$index + 1}}</span></td>
                         <td><span >{{contact.name}}</span></td>
                         <td><span class="label label-info">{{contact.email}}</span></td>
